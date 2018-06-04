@@ -1,0 +1,56 @@
+
+.jfx-toggle-node {
+	-fx-background-color:  #262626;
+    -jfx-toggle-color: red;
+}
+.jfx-toggle-node:hover {
+	-fx-background-color:  red;
+}
+
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-inner-color: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+}
+
+.novedades {
+   -fx-border-color: #ad1414; 
+   -fx-border-width: 2px 2px 2px 2px;
+}
+
+
+.perfil{
+	-fx-border-radius: 20;
+	-fx-background-radius: 20px;
+	-fx-border-color: #ad1414;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-background-color: #111111;
+    }
+    
+    
+.botones:hover { 
+	-fx-background-color: red;
+}
+
+
+.botones { 
+	-fx-background-color:  #262626;
+	-fx-selected-color: red;
+}
+
+.biomas:hover{
+	-fx-border-color: black;
+    -fx-border-width: 5px 5px 5px 5px;
+}
+
+.entrar:hover{
+	-fx-background-color:  red;
+}
+.my-button {
+    -fx-graphic: url("unmute.png");
+}
+
+.my-button:hover {
+    -fx-graphic: url("mute.png");
+}

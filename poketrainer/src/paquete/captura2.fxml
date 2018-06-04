@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="821.0" style="-fx-background-color: #3f3f3f;" stylesheets="@../images/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paquete.controladorCaptura2">
+   <children>
+      <JFXButton layoutX="-8.0" layoutY="2.0" prefHeight="40.0" prefWidth="828.0" style="-fx-background-color: #191919;" text="-- Prado --" textFill="#f5f3f3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="264.0" layoutY="56.0" prefHeight="279.0" prefWidth="279.0" style="-fx-background-color: #191919;">
+         <children>
+            <ImageView fitHeight="272.0" fitWidth="260.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/majiv7.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="133.0" layoutY="395.0" prefHeight="180.0" prefWidth="555.0" style="-fx-background-color: #191919;" />
+      <AnchorPane layoutX="143.0" layoutY="405.0" prefHeight="160.0" prefWidth="534.0" style="-fx-background-color: #282828;">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="7.0" prefHeight="144.0" prefWidth="153.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label layoutX="18.0" layoutY="12.0" text="Pokemon Disponibles" textFill="WHITE" />
+                  <Label layoutX="55.0" layoutY="41.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="63.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="191.0" layoutY="7.0" prefHeight="144.0" prefWidth="153.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label layoutX="18.0" layoutY="12.0" text="Pokemon Capturados" textFill="WHITE" />
+                  <Label layoutX="57.0" layoutY="43.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="63.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="372.0" layoutY="7.0" prefHeight="144.0" prefWidth="153.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label layoutX="41.0" layoutY="14.0" text="Precio entrada" textFill="WHITE" />
+                  <Label layoutX="27.0" layoutY="51.0" text="100$" textFill="WHITE">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="121.0" text="Tu dinero:" textFill="WHITE" />
+                  <Label fx:id="lbldinero" layoutX="71.0" layoutY="122.0" prefHeight="17.0" prefWidth="77.0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="264.0" layoutY="343.0" onAction="#captura3" prefHeight="45.0" prefWidth="279.0" style="-fx-background-color: #191919;" text="ENTRAR" textFill="WHITE" />
+   </children>
+</AnchorPane>

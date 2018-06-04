@@ -1,0 +1,15 @@
+
+
+
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-inner-color: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+}
+
+.novedades {
+   -fx-border-color: red; 
+   -fx-border-width: 2px 2px 2px 2px;
+}
+

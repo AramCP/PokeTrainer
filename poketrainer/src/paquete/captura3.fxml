@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="835.0" style="-fx-background-color: #3f3f3f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paquete.controladorCaptura3">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="452.0" prefHeight="124.0" prefWidth="821.0" style="-fx-background-color: #191919;" />
+      <AnchorPane layoutX="7.0" layoutY="39.0" prefHeight="401.0" prefWidth="821.0" style="-fx-background-color: #191919;" />
+      <ImageView fitHeight="370.0" fitWidth="787.0" layoutX="24.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/battlebg.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="sleepBtn" layoutX="647.0" layoutY="474.0" onAction="#somnifero" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #282828;" text="Somnifero" textFill="#40cd19">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="catchBtn" layoutX="461.0" layoutY="474.0" onMouseClicked="#selectPokeball" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #282828;" text="Capturar" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="473.0" prefHeight="87.0" prefWidth="418.0" style="-fx-background-color: #282828;" />
+      <JFXButton fx:id="stoneBtn" layoutX="647.0" layoutY="524.0" onAction="#piedra" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #282828;" text="Piedra" textFill="#bfbfbf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="foodBtn" layoutX="461.0" layoutY="524.0" onAction="#cebo" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #282828;" text="Cebo" textFill="#ff9d00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="pkmnImg" fitHeight="210.0" fitWidth="262.0" layoutX="507.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="combatText" layoutX="38.0" layoutY="481.0" prefHeight="66.0" prefWidth="380.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="59.0" prefHeight="66.0" prefWidth="230.0" style="-fx-background-color: #191919;" />
+      <Label alignment="CENTER" layoutX="489.0" layoutY="66.0" prefHeight="53.0" prefWidth="218.0" style="-fx-background-color: #282828;" textFill="WHITE" />
+      <Label fx:id="pkmnName" layoutX="500.0" layoutY="79.0" prefHeight="17.0" prefWidth="107.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pkmnlvl" alignment="CENTER_RIGHT" layoutX="624.0" layoutY="80.0" prefHeight="17.0" prefWidth="71.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pokeballImg" fitHeight="43.0" fitWidth="42.0" layoutX="579.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pokeballIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblpokeball" alignment="CENTER" layoutX="34.0" layoutY="530.0" onMouseClicked="#Pokeball" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: red;" text="Pokeball" textFill="WHITE" />
+      <Label fx:id="lblsuperball" alignment="CENTER" layoutX="138.0" layoutY="530.0" onMouseClicked="#Superball" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #4f8ff7;" text="Superball" textFill="WHITE" />
+      <Label fx:id="lblultraball" alignment="CENTER" layoutX="244.0" layoutY="530.0" onMouseClicked="#Ultraball" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: orange;" text="Ultraball" textFill="WHITE" />
+      <Label fx:id="lblmasterball" alignment="CENTER" layoutX="348.0" layoutY="530.0" onMouseClicked="#Masterball" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: purple;" text="Masterball" textFill="WHITE" />
+      <JFXButton fx:id="exitBtn" layoutX="647.0" layoutY="524.0" onAction="#captura2" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #282828;" text="Salir" textFill="#bfbfbf">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

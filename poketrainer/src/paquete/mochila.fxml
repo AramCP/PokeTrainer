@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="821.0" style="-fx-background-color: #3f3f3f;" stylesheets="@../images/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paquete.controladorMochila">
+   <children>
+      <JFXButton layoutX="-8.0" layoutY="2.0" prefHeight="40.0" prefWidth="828.0" style="-fx-background-color: #191919;" text="-- MOCHILA --" textFill="#f5f3f3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="1.0" layoutY="55.0" prefHeight="512.0" prefWidth="517.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="517.0" style="-fx-background-color: #191919;" text="Objetos" textFill="WHITE" />
+            <AnchorPane layoutX="14.0" layoutY="42.0" onMouseClicked="#itemClickPokeball" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" layoutY="-1.0" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: red;" text="Pokeball" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="35.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pokeballIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblpokeballCount" layoutX="25.0" layoutY="100.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="198.0" layoutY="42.0" onMouseClicked="#itemClickSuperball" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #1a5ead;" text="Superball" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="38.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/superballIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblsuperballCount" layoutX="31.0" layoutY="100.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="379.0" layoutY="42.0" onMouseClicked="#itemClickUltraball" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: orange;" text="Ultraball" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="39.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ultraballIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblultraballCount" layoutX="31.0" layoutY="99.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="196.0" onMouseClicked="#itemClickPokeCebo" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: brown;" text="Pokecebo" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="38.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ceboIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblcebocount" layoutX="24.0" layoutY="99.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="198.0" layoutY="196.0" onMouseClicked="#itemClickSomnifero" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: green;" text="Somnifero" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="46.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/somniferoIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblsomniferocount" layoutX="27.0" layoutY="99.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="379.0" layoutY="196.0" onMouseClicked="#itemClickMasterball" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: purple;" text="Masterball" textFill="WHITE" />
+                  <ImageView fitHeight="47.0" fitWidth="45.0" layoutX="39.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/masterballIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblmasterballCount" layoutX="31.0" layoutY="99.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="350.0" onMouseClicked="#itemClickLlave" prefHeight="121.0" prefWidth="121.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Label alignment="CENTER" opacity="0.78" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #fffa00;" text="Llave Maestra">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="58.0" layoutX="33.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/llaveIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblkeycount" layoutX="27.0" layoutY="101.0" text="Cantidad:" textFill="WHITE" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="563.0" layoutY="55.0" prefHeight="361.0" prefWidth="257.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="257.0" style="-fx-background-color: #191919;" text="Descripcion" textFill="WHITE" />
+            <AnchorPane fx:id="anchorPaneDesc" layoutX="22.0" layoutY="51.0" prefHeight="200.0" prefWidth="211.0">
+               <children>
+                  <Label fx:id="itemDescLabel" alignment="CENTER" layoutY="-1.0" opacity="0.78" prefHeight="27.0" prefWidth="211.0" textFill="WHITE" />
+                  <ImageView fx:id="itemImg" fitHeight="121.0" fitWidth="104.0" layoutX="54.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="itemInfo" layoutX="22.0" layoutY="268.0" prefHeight="64.0" prefWidth="227.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

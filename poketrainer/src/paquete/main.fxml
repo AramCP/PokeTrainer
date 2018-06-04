@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import javafx.embed.swing.SwingNode?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="1122.0" style="-fx-background-color: #3f3f3f;" stylesheets="@../images/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paquete.controladorPrincipal">
+   <children>
+      <AnchorPane id="panel" layoutX="-1.0" layoutY="-27.0" prefHeight="635.0" prefWidth="260.0" style="-fx-background-color: #191919;">
+         <children>
+            <Label layoutX="10.0" layoutY="610.0" prefHeight="20.0" prefWidth="208.0" text="PokeTrainer v0.1.1" textFill="#4d4d4d">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="29.0" layoutY="48.0" onMouseClicked="#mainScreen" prefHeight="46.0" prefWidth="192.0" styleClass="perfil" stylesheets="@../images/estilo.css">
+               <children>
+                  <Label fx:id="Nombre" layoutX="68.0" layoutY="8.0" prefHeight="39.0" prefWidth="151.0" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <ImageView fitHeight="78.0" fitWidth="73.0" layoutX="7.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../images/red.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <SwingNode />
+      <JFXToggleNode layoutX="-1.0" layoutY="90.0" onAction="#captura" prefHeight="84.0" prefWidth="260.0" style="-fx-selected-color: red;" styleClass="jfx-toggle-node" stylesheets="@../images/estilo.css" text="lol" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <Label text="Captura" textFill="WHITE" />
+         </graphic>
+         <toggleGroup>
+            <ToggleGroup fx:id="Grupo1" />
+         </toggleGroup>
+      </JFXToggleNode>
+      <JFXToggleNode layoutX="-1.0" layoutY="174.0" prefHeight="84.0" prefWidth="260.0" style="-fx-selected-color: red;" styleClass="jfx-toggle-node" stylesheets="@../images/estilo.css" text="lol" textFill="WHITE" toggleGroup="$Grupo1">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <Label text="Pokémon" textFill="WHITE" />
+         </graphic>
+      </JFXToggleNode>
+      <JFXToggleNode layoutX="-1.0" layoutY="258.0" onAction="#mochila" prefHeight="84.0" prefWidth="260.0" style="-fx-selected-color: red;" styleClass="jfx-toggle-node" stylesheets="@../images/estilo.css" text="lol" textFill="WHITE" toggleGroup="$Grupo1">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <Label text="Mochila" textFill="WHITE" />
+         </graphic>
+      </JFXToggleNode>
+      <JFXToggleNode layoutX="-1.0" layoutY="342.0" onAction="#pokedex" prefHeight="84.0" prefWidth="260.0" style="-fx-selected-color: red;" styleClass="jfx-toggle-node" stylesheets="@../images/estilo.css" text="lol" textFill="WHITE" toggleGroup="$Grupo1">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <Label text="Pokedex" textFill="WHITE" />
+         </graphic>
+      </JFXToggleNode>
+      <JFXToggleNode layoutX="-1.0" layoutY="426.0" onAction="#tienda" prefHeight="84.0" prefWidth="260.0" style="-fx-selected-color: red;" styleClass="jfx-toggle-node" stylesheets="@../images/estilo.css" text="lol" textFill="WHITE" toggleGroup="$Grupo1">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <graphic>
+            <Label text="Tienda" textFill="WHITE" />
+         </graphic>
+      </JFXToggleNode>
+      <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="14.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/shopIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="18.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bagIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="14.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-scizor-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="46.0" layoutX="16.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pokedexIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="103.0" layoutX="17.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/catchIcon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchorPaneContent" layoutX="278.0" layoutY="14.0" prefHeight="570.0" prefWidth="821.0" />
+   </children>
+</AnchorPane>

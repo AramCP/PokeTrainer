@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="821.0" style="-fx-background-color: #3f3f3f;" stylesheets="@../images/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paquete.controladorCaptura2">
+   <children>
+      <JFXButton layoutX="-8.0" layoutY="2.0" prefHeight="40.0" prefWidth="828.0" style="-fx-background-color: #191919;" text="-- Tus Pokémon --" textFill="#f5f3f3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="5.0" layoutY="56.0" prefHeight="515.0" prefWidth="538.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="538.0" style="-fx-background-color: #191919;" text="Pokémon" textFill="WHITE" />
+            <JFXButton layoutX="294.0" layoutY="471.0" onMouseClicked="#pageNext" style="-fx-background-color: #0f0f0f;" text="&gt;" textFill="#dddddd">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="212.0" layoutY="471.0" onMouseClicked="#pageBack" style="-fx-background-color: #0f0f0f;" text="&lt;" textFill="#dddddd">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="9.0" layoutY="52.0" onMouseClicked="#setBigImg1" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="193.0" layoutY="52.0" onMouseClicked="#setBigImg2" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="374.0" layoutY="52.0" onMouseClicked="#setBigImg3" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="6.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="9.0" layoutY="258.0" onMouseClicked="#setBigImg4" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="193.0" layoutY="259.0" onMouseClicked="#setBigImg5" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="374.0" layoutY="260.0" onMouseClicked="#setBigImg6" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="207.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="193.0" layoutY="207.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="374.0" layoutY="207.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="9.0" layoutY="413.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="193.0" layoutY="413.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="374.0" layoutY="413.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label fx:id="page" layoutX="268.0" layoutY="481.0" text="0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="553.0" layoutY="56.0" prefHeight="430.0" prefWidth="257.0" style="-fx-background-color: #282828;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="27.0" prefWidth="257.0" style="-fx-background-color: #191919;" text="Datos Pokemon" textFill="WHITE" />
+            <AnchorPane layoutX="51.0" layoutY="40.0" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #191919;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="51.0" layoutY="190.0" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: #0f0f0f;" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="51.0" layoutY="217.0" prefHeight="27.0" prefWidth="155.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
